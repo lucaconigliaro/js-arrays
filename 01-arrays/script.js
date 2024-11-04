@@ -10,13 +10,9 @@ const teachers = [
 
 // 0. Per ogni insegnante stampa in console la frase:
 // [Nome insengante] è l'insegnante in posizione [i]
-console.log(teachers[0])
-console.log(teachers[1])
-console.log(teachers[2])
-console.log(teachers[3])
-console.log(teachers[4])
-console.log(teachers[5])
-console.log(teachers[6])
+for (let i = 0; i < teachers.length; i++) {
+  const curTeacher = teachers[i]}
+  console.log (`${curTeacher} è l'insegnante in posizione ${i}`)
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
@@ -46,19 +42,19 @@ console.log(teachers);
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 const isFabioPresent = teachers.includes(`Fabio`);
-console.log(isFabioPresent)
+console.log(isFabioPresent);
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 const lewisIndex = teachers.indexOf(`Lewis`);
-console.log(lewisIndex)
+console.log(lewisIndex);
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
-const teachersString = teachers.toString();
-console.log(teachersString)
+const teachersString = teachers.join(`, `);
+console.log(teachersString);
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 const isTeachersEmpty = teachers.length === 0;
-console.log(isTeachersEmpty)
+console.log(isTeachersEmpty);
